@@ -1,0 +1,67 @@
+{
+  "name": "vscode-fold-level",
+  "displayName": "Fold Level",
+  "description": "easier to fold code",
+  "version": "0.0.3",
+  "publisher": "vikyd",
+  "icon": "FoldLevel-logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikyd/vscode-ext-foldlevel"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:vikyd.FoldLevel.level1",
+    "onCommand:vikyd.FoldLevel.level2",
+    "onCommand:vikyd.FoldLevel.level3",
+    "onCommand:vikyd.FoldLevel.level4",
+    "onCommand:vikyd.FoldLevel.level5",
+    "onCommand:vikyd.FoldLevel.level6"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vikyd.FoldLevel.level1",
+        "title": "Fold All to Level1 (FoldLevel)"
+      },
+      {
+        "command": "vikyd.FoldLevel.level2",
+        "title": "Fold All to Level2 (FoldLevel)"
+      },
+      {
+        "command": "vikyd.FoldLevel.level3",
+        "title": "Fold All to Level3 (FoldLevel)"
+      },
+      {
+        "command": "vikyd.FoldLevel.level4",
+        "title": "Fold All to Level4 (FoldLevel)"
+      },
+      {
+        "command": "vikyd.FoldLevel.level5",
+        "title": "Fold All to Level5 (FoldLevel)"
+      },
+      {
+        "command": "vikyd.FoldLevel.level6",
+        "title": "Fold All to Level6 (FoldLevel)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6",
+    "tslint": "^5.8.0",
+    "@types/node": "^7.0.43",
+    "@types/mocha": "^2.2.42"
+  }
+}
