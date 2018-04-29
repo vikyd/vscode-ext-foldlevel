@@ -1,6 +1,6 @@
 # Fold Level
 
-Additional Fold Commands for VS Code.
+Additional Fold Commands by One Step Shortcut.
 
 Like PhpStorm: [`Expand to level | 1, 2, 3, 4 or 5`](https://www.jetbrains.com/help/idea/code-folding.html#folding_menu)
 

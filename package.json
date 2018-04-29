@@ -1,10 +1,10 @@
 {
   "name": "vscode-fold-level",
   "displayName": "Fold Level",
-  "description": "easier to fold code",
-  "version": "0.0.3",
+  "description": "Additional Fold Commands by One Step Shortcut, Like PhpStorm",
+  "version": "0.0.5",
   "publisher": "vikyd",
-  "icon": "FoldLevel-logo.png",
+  "icon": "foldlevel-logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/vikyd/vscode-ext-foldlevel"
