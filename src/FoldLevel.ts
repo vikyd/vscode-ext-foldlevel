@@ -10,6 +10,17 @@ function setToParentLevelSelection(textEditor, targetLevel, originLineNum) {
     +textEditor.options.tabSize
   );
 
+  // const selection = textEditor.selection;
+  // const lineOfReferenceForFold = whenBlankLineUsePreviousOrNextLine(
+  //   textEditor,
+  //   selection.anchor.line
+  // );
+  // const parentLine = Lines.findNextLineUpSpacedLeft(
+  //   textEditor.document,
+  //   lineOfReferenceForFold,
+  //   +textEditor.options.tabSize
+  // );
+
   if (!parentLine) {
     // find upward to guess if there is a higher level line
     // equal means: origin line's level is higher than target level
@@ -55,6 +66,45 @@ function setToParentLevelSelection(textEditor, targetLevel, originLineNum) {
     0
   );
   setToParentLevelSelection(textEditor, targetLevel, originLineNum);
+}
+
+/**
+ * ref: https://github.com/dakaraphi/vscode-extension-fold/blob/master/src/Fold.ts
+ *
+ * If the line on which the command is executed is blank, then we want to use either the
+ * previous line or next line with text to determine the correct level.
+ * In this event, whichever line (previous or next) is the higher level (further right) will be used.
+ *
+ * @param editor
+ * @param line
+ */
+function whenBlankLineUsePreviousOrNextLine(
+  editor: vscode.TextEditor,
+  line: number
+) {
+  const currentLine = editor.document.lineAt(line);
+  if (!currentLine.isEmptyOrWhitespace) return line;
+
+  const nextLineup = Lines.findNextLineUp(
+    editor.document,
+    line,
+    line => !line.isEmptyOrWhitespace
+  );
+  const nextLineDown = Lines.findNextLineDown(
+    editor.document,
+    line,
+    line => !line.isEmptyOrWhitespace
+  );
+
+  const lineUpLevel = Lines.calculateLineLevel(editor, nextLineup.lineNumber);
+  const lineDownLevel = Lines.calculateLineLevel(
+    editor,
+    nextLineDown.lineNumber
+  );
+
+  return lineUpLevel > lineDownLevel
+    ? nextLineup.lineNumber
+    : nextLineDown.lineNumber;
 }
 
 export function level(targetLevel) {

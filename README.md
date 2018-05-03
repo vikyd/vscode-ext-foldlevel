@@ -42,4 +42,4 @@ Set shortcuts:
   ```
 
 # Thanks
-- https://github.com/vikyd/vscode-extension-common
+- https://github.com/dakaraphi/vscode-extension-common
