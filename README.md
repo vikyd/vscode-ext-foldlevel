@@ -44,13 +44,13 @@ Set shortcuts:
   },
   // ↓  optional
   {
-    "command": ""alt+-,
-    "title": "editor.foldAll"
+      "key": ""alt+-,
+      "command": "editor.foldAll"
   },
   // ↓  optional
   {
-    "command": "alt+=",
-    "title": "editor.unfoldAll"
+      "key": "alt+=",
+      "command": "editor.unfoldAll"
   }
   ```
 
