@@ -2,7 +2,7 @@
   "name": "vscode-fold-level",
   "displayName": "Fold Level",
   "description": "Additional Fold Commands by One Step Shortcut, Like PhpStorm",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "vikyd",
   "icon": "logo.png",
   "repository": {
@@ -47,16 +47,6 @@
       {
         "command": "vikyd.FoldLevel.level6",
         "title": "Fold All to Level6 (FoldLevel)"
-      },
-      {
-        "optional": "↓ optional",
-        "command": "editor.foldAll",
-        "title": "Fold All (FoldLevel)"
-      },
-      {
-        "optional": "↓ optional",
-        "command": "editor.unfoldAll",
-        "title": "Unfold All (FoldLevel)"
       }
     ]
   },

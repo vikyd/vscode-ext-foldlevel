@@ -6,15 +6,13 @@ Additional Fold Commands by One Step Shortcut.
 
 Like PhpStorm: [`Expand to level | 1, 2, 3, 4 or 5`](https://www.jetbrains.com/help/idea/code-folding.html#folding_menu)
 
-
 ![foldlevel](https://github.com/vikyd/vscode-ext-foldlevel/raw/master/img/foldlevel.gif)
-
 
 # Usage & Commands
 
 Set shortcuts:
 
-* Press 
+* Press
   * Mac: `Command + Shift + p`
   * Win: `Ctrl + Shift + p`
 * `Open Keyboard Shortcuts File`
@@ -43,8 +41,19 @@ Set shortcuts:
   {
       "key": "alt+6",
       "command": "vikyd.FoldLevel.level6"
+  },
+  // ↓  optional
+  {
+    "command": ""alt+-,
+    "title": "editor.foldAll"
+  },
+  // ↓  optional
+  {
+    "command": "alt+=",
+    "title": "editor.unfoldAll"
   }
   ```
 
 # Thanks
-- https://github.com/dakaraphi/vscode-extension-common
+
+* https://github.com/dakaraphi/vscode-extension-common
