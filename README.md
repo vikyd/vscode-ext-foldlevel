@@ -5,7 +5,7 @@ Additional Fold Commands by One Step Shortcut.
 Like PhpStorm: [`Expand to level | 1, 2, 3, 4 or 5`](https://www.jetbrains.com/help/idea/code-folding.html#folding_menu)
 
 
-![foldlevel](https://github.com/vikyd/vscode-ext-foldlevel/blob/master/img/foldlevel.gif)
+![foldlevel](https://github.com/vikyd/vscode-ext-foldlevel/raw/master/img/foldlevel.gif)
 
 
 # Usage & Commands
