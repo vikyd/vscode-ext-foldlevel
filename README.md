@@ -44,7 +44,7 @@ Set shortcuts:
   },
   // ↓  optional
   {
-      "key": ""alt+-,
+      "key": "alt+-",
       "command": "editor.foldAll"
   },
   // ↓  optional
