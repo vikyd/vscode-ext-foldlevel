@@ -20,37 +20,45 @@ Set shortcuts:
   ```json
   {
       "key": "alt+1",
-      "command": "vikyd.FoldLevel.level1"
+      "command": "vikyd.FoldLevel.level1",
+      "when": "editorTextFocus && foldingEnabled"
   },
   {
       "key": "alt+2",
-      "command": "vikyd.FoldLevel.level2"
+      "command": "vikyd.FoldLevel.level2",
+      "when": "editorTextFocus && foldingEnabled"
   },
   {
       "key": "alt+3",
-      "command": "vikyd.FoldLevel.level3"
+      "command": "vikyd.FoldLevel.level3",
+      "when": "editorTextFocus && foldingEnabled"
   },
   {
       "key": "alt+4",
-      "command": "vikyd.FoldLevel.level4"
+      "command": "vikyd.FoldLevel.level4",
+      "when": "editorTextFocus && foldingEnabled"
   },
   {
       "key": "alt+5",
-      "command": "vikyd.FoldLevel.level5"
+      "command": "vikyd.FoldLevel.level5",
+      "when": "editorTextFocus && foldingEnabled"
   },
   {
       "key": "alt+6",
-      "command": "vikyd.FoldLevel.level6"
+      "command": "vikyd.FoldLevel.level6",
+      "when": "editorTextFocus && foldingEnabled"
   },
   // ↓  optional
   {
       "key": "alt+-",
-      "command": "editor.foldAll"
+      "command": "editor.foldAll",
+      "when": "editorTextFocus && foldingEnabled"
   },
   // ↓  optional
   {
       "key": "alt+=",
-      "command": "editor.unfoldAll"
+      "command": "editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
   }
   ```
 
